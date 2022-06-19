@@ -1,0 +1,173 @@
+/* # Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+body , html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1440px) {
+.hero-section {
+    background: url('./images/bg-hero-desktop.svg');
+}
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+    }
+    .nav button {
+        background: #fff;
+        border: none;
+        border-radius: 50px;
+        box-shadow:  0px 3px #eee;
+        padding: 10px 20px;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 15% 0 5% 0;
+    }
+   
+}
+
+@media screen and (max-width: 375px) {
+    .hero-section {
+        background: url('./images/bg-hero-mobile.svg');
+        
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text{
+        padding-bottom: 30%;
+    }
+    .responsive-logo {
+        width: 25%;
+    }
+    .nav button {
+        font-size: xx-small;
+        padding: 5px 10px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .img-rev {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 25% 0 15% 2% ;
+    }
+    }
+    .hero-section {
+        background-color: hsl(193, 100%, 96%);
+        padding: 2% ;
+        margin-bottom: 10%;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .responsive {
+        width: 100%;
+        height: auto;
+      }
+    button {
+        background-color: hsl(322, 100%, 66%);
+        color: #fff;
+        padding: 15px;
+        border: none;
+        border-radius: 50px;
+    }
+    .main {
+        padding: 20px 30px;
+        border-radius: 25px;
+        box-shadow:  0 0 10px #ddd;
+    }
+    .main-section {
+        margin: auto;
+        padding-top: 30px;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .build {
+        position: relative;
+        bottom: 50px;
+        background-color: #fff;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 25px;
+        border-radius: 25px;
+        box-shadow:  0 0 10px #ddd;
+    }
+    .footer {
+        margin-top: 20%;
+        background-color: hsl(192, 100%, 9%);
+        color: #eee;
+    }
+    .footer li {
+        list-style: none;
+    }
